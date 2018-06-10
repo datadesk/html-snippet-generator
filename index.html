@@ -181,6 +181,11 @@
 			padding-top:5px;
 	}
 
+	input[type="text"] {
+		display: block;
+		min-width: 500px;
+	}
+
 	@media only screen and (max-device-width: 480px) {
 		.inputfix {
 			width: 66% !important;
@@ -234,7 +239,7 @@
 		for(var i = 0; i < rotatoNum; i++) {
 		    $("#rotatoInput").append('<input type="text" id="rotatoImageURL' + (i + 1) + '" class="form-control rotatoImageURL" name="image_values" placeholder="http://placehold.it/1600x900&text=Image' + (i + 1) + '">')
 		}
-		
+		$("#imageURLs").fadeIn();
 	}
 
 	function createRotato(){
@@ -415,17 +420,6 @@
 					
 					<form>
 					  <fieldset>
-					    
-					    <label>Number of images:</label>
-					    <div class="input-group">
-							<select id="rotatoNum" onchange="buildRotatoForm();">
-							  <option selected>Select</option>
-							  <option value="2">2</option>
-							  <option value="3">3</option>
-							  <option value="4">4</option>
-							  <option value="5">5</option>
-							</select>
-						</div>
 
 						<label>Dimensions:</label>
 					    <div class="input-group">
@@ -437,8 +431,17 @@
 							  <option value="3x1">3:1</option>
 							</select>
 						</div>						
-						
-						<label>Image URLS:</label>
+					    <label>Number of images:</label>
+					    <div class="input-group">
+							<select id="rotatoNum" onchange="buildRotatoForm();">
+							  <option selected>Select</option>
+							  <option value="2">2</option>
+							  <option value="3">3</option>
+							  <option value="4">4</option>
+							  <option value="5">5</option>
+							</select>
+						</div>						
+						<label style="display:none;" id="imageURLs">Image URLS:</label>
 						<div id="rotatoInput" class="input-group"></div>
 
 						<label>Link to story:</label>
@@ -468,15 +471,17 @@
 						
 						<div class="input-group">
 						      <input type="text" id="youtube-url" class="form-control" value="https://youtube.com/watch?v=QILiHiTD3uc">
-						      <span class="input-group-btn">
-						        <button class="btn btn-primary" onclick="createYouTubeEmbed();" type="button">Embed</button>
-						      </span>
-						</div><!-- /input-group -->
 						<div>
-							<span>Mute and autoplay?</span>
-							<input type="checkbox" name="youtubeMutedAutoplay" value="1">
-							<label name="youtubeMutedAutoplay">Yes</label>
-						</div>						
+
+						
+						<div class="input-group">
+							<label name="youtubeMutedAutoplay" style="display:inline-block;">Mute and autoplay?</label>
+							<input type="checkbox" name="youtubeMutedAutoplay" value="1" style="display:inline-block;">
+						</div>	
+					      <span class="input-group-btn">
+					        <button class="btn btn-primary" onclick="createYouTubeEmbed();" type="button">Embed</button>
+					      </span>
+						</div><!-- /input-group -->					
 					  </fieldset>
 					</form>
          			  
