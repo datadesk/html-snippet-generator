@@ -373,21 +373,6 @@
 	
   </head>
   <body>
-	
-	  <nav class="navbar navbar-static-top navbar-inverse" role="navigation">
-	    <div class="container-fluid">
-	      <div class="navbar-header">
-	        
-	      </div>
-
-	      <!-- Collect the nav links, forms, and other content for toggling -->
-	      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse">
-	        <ul class="nav navbar-nav navbar-right pad-right">
-			    <a href="#about" role="button" class="btn btn-info navbar-btn" data-toggle="modal" data-target="#about">About</a>
-	        </ul>
-	      </div><!-- /.navbar-collapse -->
-	    </div><!-- /.container-fluid -->
-	  </nav>
 	    
 	<div class="container">
 	  <div class="row">
@@ -409,10 +394,7 @@
 	              <li><a href="#premiumVideo" data-toggle="tab">Premium Video</a></li>
 	              <li><a href="#videoloop" data-toggle="tab">Video Loop</a></li>	          
 	              <li><a href="#iframe" data-toggle="tab">Generic iFrame</a></li>
-	              <!--<li><a href="#instagram" data-toggle="tab">Instagram</a></li>
-	              <li><a href="#vine" data-toggle="tab">Vine</a></li>
-	              <li><a href="#getty" data-toggle="tab">Getty Images</a></li>
-	              <li><a href="#more" data-toggle="tab">More</a></li> -->
+
               </ul>
 			  
               <div id="leTabContent" class="tab-content">
@@ -538,27 +520,6 @@
 				  				            
 				</div>
 
-                <!-- <div class="tab-pane fade well" id="googlemaps">
-										
-					<form>
-					  <fieldset>
-					    <label>Google Maps iFrame Embed:</label>
-						
-						<div class="input-group">
-						      <input type="text" id="googlemaps-url" class="form-control" value="<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387144.0075834208!2d-73.97800349999999!3d40.7056308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY!5e0!3m2!1sen!2sus!4v1394298866288' width='600' height='450' frameborder='0' style='border:0'></iframe>">
-						      <span class="input-group-btn">
-						        <button class="btn btn-primary" onclick="createGoogleMapsEmbed();" type="button">Embed</button>
-						      </span>
-						    </div>
-							
-					  </fieldset>
-					</form>
-  	  			  
-				  <div id="googlemapspreview"></div>
-			  
-  	  			  <div class="code" id="googlemapsembedCode"></div>
-				  				
-                </div> -->
 
 				<div class="tab-pane fade well" id="iframe">
 										
@@ -584,141 +545,12 @@
 				  				
                 </div>
 
-                <!-- <div class="tab-pane fade well" id="instagram">
-					
-					<form>
-					  <fieldset>
-					    <label>Instagram Page URL:</label>
-						
-						<div class="input-group">
-						      <input type="text" id="instagram-url" class="form-control" value="https://instagram.com/p/dnQi4EGuZx/">
-						      <span class="input-group-btn">
-						        <button class="btn btn-primary" onclick="createInstagramEmbed();" type="button">Embed</button>
-						      </span>
-						    </div>
-						
-					  </fieldset>
-					</form>
-         			  
-  	  			  <div id="instagrampreview"></div>
-				
-	  			  <div class="code" id="instagramembedCode"></div>
-  
-				</div>
-				
-                <div class="tab-pane fade well" id="vine">
-					
-					<form>
-					  <fieldset>
-					    <label>Vine URL:</label>
-						
-						<div class="input-group">
-						      <input type="text" id="vine-url" class="form-control" value="https://vine.co/v/MjpK9pmKvzu/">
-						      <span class="input-group-btn">
-						        <button class="btn btn-primary" onclick="createVineEmbed();" type="button">Embed</button>
-						      </span>
-						    </div>
-
-					  </fieldset>
-					</form>
-  	  			  
-				  <div id="vinepreview"></div>
-			  
-  	  			  <div class="code" id="vineembedCode"></div>
-				  				                
-				</div> -->
-				
-				<!-- next -->
-				
-                <!-- <div class="tab-pane fade well" id="getty">
-					
-					<form>
-					  <fieldset>
-					    <label>Getty Image Embed:</label>
-						
-						<div class="input-group">
-						      <input type="text" id="getty-url" class="form-control" value="<iframe src='//embed.gettyimages.com/embed/137668307?et=0kKQE3OQU06k6Y-tD9FdZA&sig=MuEspy0rbDdvg7lpUAk77Pwaha2oc1_tUWsZTdH6IHE=' width='594' height='475' frameborder='0' scrolling='no'></iframe>">
-						      <span class="input-group-btn">
-						        <button class="btn btn-primary" onclick="createGettyEmbed();" type="button">Embed</button>
-						      </span>
-						    </div>
-
-					  </fieldset>
-					</form>
-  	  			  
-  				  <div id="gettyplaceholder" style="display:none"></div>
-				  
-				  <div id="gettypreview"></div>
-			  
-  	  			  <div class="code" id="gettyembedCode"></div>
-				  				                
-				</div> -->
-				
-				<!-- next -->
-				
-                <div class="tab-pane fade well" id="more">
-										
-					<p><strong>Great news!</strong> The embed codes offered by these services are already responsive:</p>
-					
-					<ul>
-						<li><a target="_blank" href="https://scribd.com/">Scribd</a> (select 'Autosize')</li>
-						<li><a target="_blank" href="https://soundcloud.com/">SoundCloud</a></li>
-						<li><a target="_blank" href="https://storify.com/">Storify</a></li>
-						<li><a target="_blank" href="https://twitter.com/">Twitter</a></li>
-					</ul>
-				
-					<p>Know of more? New embed type giving you problems? <a href="mailto:jeffehobbs@gmail.com">Let me know</a> and report any issues on <a  target="_blank" href="https://github.com/jeffehobbs/embedresponsively/issues/new">GitHub</a>.</p>
-                </div>
               </div>
 			  
 	    </div>
 	  </div>
 	</div>
 
-	<!--footer-->
-<!-- 	<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
-	  <div class="container">
-		<p class="text-muted text-center" style="padding-top: 12px"><small><a  target="_blank" href="https://github.com/jeffehobbs/embedresponsively">Download or fork on Github</a>. 
-		Please Embed Responsively.</small></p>
-	  </div>
-	</nav> -->
-
-	<!-- about box -->
-	<div id="about" class="modal fade">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h4 class="modal-title">About</h4>
-	      </div>
-	      <div class="modal-body">
-			  
-	  		<p><strong>embedresponsively.com</strong> helps build responsive embed codes for embedding rich third-party media into responsive web pages.</p>
-		
-	  		<p>The code here is based on research and work by <a  target="_blank" href="http://alistapart.com/article/creating-intrinsic-ratios-for-video">Theirry Koblentz</a>, <a  target="_blank" href="http://amobil.se/2011/11/responsive-embeds/">Anders Andersen</a> and <a  target="_blank" href="http://niklausgerber.com/blog/responsive-google-or-bing-maps/">Niklaus Gerber</a>.</p>
-			
-	  	    <p>Created and maintained by <a target="_blank" href="https://twitter.com/jeffehobbs">@jeffehobbs</a>.</p>
-				
-	      </div>
-	      <div class="modal-footer">
-			  <div class="pull-left">Version 3.0 (Added <a target="_blank" href="https://www.gettyimages.com/">Getty Images</a>)</div>
-	        <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
-	      </div>
-	    </div><!-- /.modal-content -->
-	  </div><!-- /.modal-dialog -->
-	</div><!-- /.modal -->
-		
-	<script>
-	
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-59418-18', 'embedresponsively.com');
-	  ga('send', 'pageview');
-
-	</script>
-	
   </body>
 
 </html>
