@@ -298,7 +298,7 @@
 		var rotatoHTML = '&lt;a href="' + rotatoLink + '"&gt;&lt;div class="img-animation-container img-animation-container-' + rotatoDimensions + ' img-animation-container-' + rotatoNumImages + '" &gt;' + rotatoImageTags + '&lt;/div&gt;&lt;/a&gt;';
 		var rotatoPreview = '<a href="' + rotatoLink + '"><div class="img-animation-container img-animation-container-' + rotatoDimensions + ' img-animation-container-' + rotatoNumImages + '" >' + rotatoImageTags + '</div></a>';
 
-		$("#rotatoCode").html( embedLabel + "<textarea rows='12' class='codebox'>" + rotatoOpenCSS + " .image-animation-container-" + rotatoSizeCSS + rotatoKeyframeCSS + rotatoCloseCSS + rotatoHTML + "</textarea>");
+		$("#rotatoCode").html( embedLabel + "<textarea rows='12' class='codebox'>" + rotatoOpenCSS + " .img-animation-container-" + rotatoSizeCSS + rotatoKeyframeCSS + rotatoCloseCSS + rotatoHTML + "</textarea>");
 		$("#rotatoPreview").html( previewLabel + rotatoPreview );
 	}
 
