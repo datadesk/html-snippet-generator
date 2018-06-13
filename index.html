@@ -304,8 +304,9 @@
 
 	function createPremiumVideoEmbed() {
 		var p2pcontentID = $("#p2pcontentID").val();
-		var premiumVideoEmbed = '<video data-account="3690581438001" data-player="B1MxOxSFnb" data-embed="default" data-video-id="ref:' + p2pcontentID + '" class="video-js" controls></video>&lt;script src="//players.brightcove.net/3690581438001/B1MxOxSFnb_default/index.min.js"&gt;&lt;/script&gt;';
-		var premiumVideoPreview = '<video data-account="3690581438001" data-player="B1MxOxSFnb" data-embed="default" data-video-id="ref:' + p2pcontentID + '" class="video-js" controls></video>';
+		var posterImg = $("#posterImg").val();
+		var premiumVideoEmbed = '<video data-account="3690581438001" data-player="B1MxOxSFnb" data-embed="default" data-video-id="ref:' + p2pcontentID + '" poster="' + posterImg + '" class="video-js" controls></video>&lt;script src="//players.brightcove.net/3690581438001/B1MxOxSFnb_default/index.min.js"&gt;&lt;/script&gt;';
+		var premiumVideoPreview = '<video data-account="3690581438001" data-player="B1MxOxSFnb" data-embed="default" data-video-id="ref:' + p2pcontentID + '" poster="' + posterImg + '" class="video-js" controls></video>';
 
 		var unescapedVideojsScript = videojsScript;
 		var escapedVideojsScript = unescapedVideojsScript.replace("&lt;","<").replace("&gt;",">");
@@ -481,9 +482,14 @@
 					<form>
 					  <fieldset>
 					    <label>ContentID from P2P:</label>
-						
 						<div class="input-group">
 						      <input type="text" id="p2pcontentID" class="form-control" value="93054345">
+						</div>
+					    <label>Poster image:</label>
+						<div class="input-group">
+						      <input type="text" id="posterImg" class="form-control" value="http://www.trbimg.com/img-5b170a70/turbine/la-et-mn-star-wars-the-last-jedi-trailer/1000/16x9">
+						</div>						
+						<div class="input-group">
 						      <span class="input-group-btn">
 						        <button class="btn btn-primary" onclick="createPremiumVideoEmbed();" type="button">Embed</button>
 						      </span>
