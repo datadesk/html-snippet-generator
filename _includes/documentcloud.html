@@ -1,0 +1,18 @@
+<div class="tab-pane fade well" id="documentcloud">
+    <form>
+        <fieldset>
+            <label>DocumentCloud:</label>
+            <div class="input-group">
+                <input type="text" id="documentcloud-url" class="form-control" value="" placeholder="Insert DocumentCloud URL">
+                <span class="input-group-btn">
+                    <button class="btn btn-primary" onclick="creatDocumentCloudEmbed();" type="button">Embed</button>
+                </span>
+            </div>
+        </fieldset>
+    </form>
+    <div id="documentcloudpreview"></div>
+    <div id="documentcloudembedNote" class="alert alert-info" style="display:none; margin-top:15px">
+        <strong>NOTE:</strong> Your document must be set to "public" on DocumentCloud.
+    </div>
+    <div class="code" id="documentcloudembedCode"></div>
+</div>

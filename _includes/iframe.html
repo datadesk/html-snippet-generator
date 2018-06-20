@@ -1,0 +1,16 @@
+<div class="tab-pane fade well" id="iframe">
+    <form>
+        <fieldset>
+            <label>Generic iFrame Embed:</label>
+            <div class="input-group">
+                <input type="text" id="generic-url" class="form-control" value="<iframe src='https://www.youtube.com/embed/i-HQmQrY5NU' style='border:0'></iframe>">
+                <span class="input-group-btn">
+                    <button class="btn btn-primary" onclick="createGenericEmbed();" type="button">Embed</button>
+                </span>
+            </div><!-- /input-group -->
+        </fieldset>
+    </form>
+    <div id="genericpreview"></div>
+    <div id="genericembedNote" class="alert alert-info" style="display:none; margin-top:15px"><strong>NOTE:</strong> You may want to remove any hard coded values you see below with regards to "width" and "height" in the below code. These values may be in the iFrame SRC parameters, or in the iFrame query string. Experiment to see what works best.</div>
+    <div class="code" id="genericembedCode"></div>
+</div>

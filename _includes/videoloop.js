@@ -1,0 +1,10 @@
+var videoLoopCSS = "&lt;style&gt;.video-loop { position: relative; padding-top: 0; max-width: 100%; width: auto; height: auto; } .video-loop > *:first-child { width: 100%; height: 100%; } &lt;/style&gt;";
+
+function createVideoLoopEmbed(){
+    var videoLoopURL = $("#videoloop-url").val();
+    var videoLoopEmbed = '<div class="video-loop"> <video autoplay loop muted playsinline> 	<source src="' + videoLoopURL + '"  type="video/mp4"> </video> </div>';
+    var videoLoopPreview = '<div class="video-loop"> <video autoplay loop muted playsinline> 	<source src="' + videoLoopURL + '"  type="video/mp4"> </video> </div>';
+    var unescapedVideojsScript = videojsScript;
+    $("#videoLoopCode").html(embedLabel + "<textarea rows='12' class='codebox'>" + videoLoopCSS + videoLoopEmbed + "</textarea>");
+    $("#videoLoopPreview").html( previewLabel + videoLoopEmbed );
+}

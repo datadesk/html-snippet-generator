@@ -1,0 +1,19 @@
+<div class="tab-pane fade well" id="youtube">
+    <form>
+        <fieldset>
+            <label>YouTube Page URL:</label>
+            <div class="input-group">
+                  <input type="text" id="youtube-url" class="form-control" value="https://youtube.com/watch?v=QILiHiTD3uc">
+            </div>
+            <div class="input-group">
+                <label name="youtubeMutedAutoplay" style="display:inline-block;">Mute and autoplay?</label>
+                <input type="checkbox" name="youtubeMutedAutoplay" value="1" style="display:inline-block;">
+            </div>
+            <span class="input-group-btn">
+                <button class="btn btn-primary" onclick="createYouTubeEmbed();" type="button">Embed</button>
+            </span>
+        </fieldset>
+    </form>
+    <div id="youtubepreview"></div>
+    <div class="code" id="youtubeembedCode"></div>
+</div>
