@@ -1,0 +1,14 @@
+<div id="document"></div>
+<script src="http://s3.documentcloud.org/viewer/loader.js"><%= "<"+"/script>" %>
+<% print("<sc" + "ript type='text/javascript'>"); %>
+    DV.load('http://www.documentcloud.org/documents/<%= slug %>', {
+       container : '#document',
+       width: 980,
+       height: 1040,
+       zoom:'auto',
+       pdf: true,
+       text: true,
+       sidebar: false,
+       responsive: true
+     });
+<%= "<"+"/script>" %>
