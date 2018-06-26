@@ -9,5 +9,5 @@ function creatDocumentCloudEmbed(){
     var template = _.template($("#documentcloud-jst").html());
     var html = template({slug: slug});
     $("#documentcloudembedNote").fadeIn();
-    $("#documentcloudembedCode").html(embedLabel + "<textarea rows='12' class='codebox'>" + embedContainerCSS + embedContainerDivOpen + html + embedContainerDivClose + "</textarea>");
+    $("#documentcloudembedCode").html(embedLabel + "<textarea rows='12' class='codebox'>" + html + "</textarea>");
 }
