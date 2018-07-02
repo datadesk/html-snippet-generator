@@ -1,6 +1,6 @@
 var embedLabel = "<br/><p class='control-label'>Embed code:</p>";
 
-var videojsCSS = "&lt;style&gt;.video-js { position: relative; padding-bottom: 56.25%; padding-top: 0; max-width: 100%; width: auto; height: auto; .video-js > *:first-child { width: 100%; height: 100%; }&lt;/style&gt;";
+var videojsCSS = "&lt;style&gt;.video-js { position: relative; padding-bottom: 56.25%; padding-top: 0; max-width: 100%; width: auto; height: auto; } .video-js > *:first-child { width: 100%; height: 100%; }&lt;/style&gt;";
 var videojsScript = '&lt;script src="//players.brightcove.net/3690581438001/B1MxOxSFnb_default/index.min.js"&gt;&lt;/script&gt;';
 
 var embedContainerCSS = "&lt;style&gt;.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }&lt;/style&gt;";
