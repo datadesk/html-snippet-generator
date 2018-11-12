@@ -3,7 +3,13 @@
 Getting started 
 
 ```
-git clone git@github.com:datadesk/html-snippet-generator.git
+$ git clone git@github.com:datadesk/html-snippet-generator.git
+```
+
+Move into the directory it created.
+
+```
+$ cd html-snippet-generator
 ```
 
 Install our Ruby dependencies with Bundler.
