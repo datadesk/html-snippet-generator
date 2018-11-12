@@ -3,5 +3,5 @@
 Getting started 
 
 ```
-git clone 
+git clone git@github.com:datadesk/html-snippet-generator.git
 ```
