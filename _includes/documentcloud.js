@@ -10,4 +10,5 @@ function creatDocumentCloudEmbed(){
     var html = template({slug: slug});
     $("#documentcloudembedNote").fadeIn();
     $("#documentcloudembedCode").html(embedLabel + "<textarea rows='12' class='codebox'>" + html + "</textarea>");
+    $("#documentcloudSNAP").fadeIn();
 }
