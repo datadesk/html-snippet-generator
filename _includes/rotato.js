@@ -54,9 +54,6 @@ function createRotato(){
     var imageValues = jQuery(".rotatoImageURL[name='image_values']").map(function(){
         return this.value
     }).get()
-    //console.log(imageValues);
-
-    //var relImageValues = imageValues.replace(/^http?:\/\//, '//')
 
     var relativeURLs = [];
 
@@ -64,7 +61,6 @@ function createRotato(){
         urls = imageValues[i].replace("http\:\/\/", "\/\/");
         relativeURLs.push(urls);
     }
-    console.log(relativeURLs);
 
     //make the image tags
     var rotatoImageTags = "";
