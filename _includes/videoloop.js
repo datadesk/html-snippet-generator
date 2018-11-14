@@ -2,8 +2,9 @@ var videoLoopCSS = "&lt;style&gt;.video-loop { position: relative; padding-top: 
 
 function createVideoLoopEmbed(){
     var videoLoopURL = $("#videoloop-url").val();
-    var videoLoopEmbed = '<div class="video-loop"> <video autoplay loop muted playsinline> 	<source src="' + videoLoopURL + '"  type="video/mp4"> </video> </div>';
-    var videoLoopPreview = '<div class="video-loop"> <video autoplay loop muted playsinline> 	<source src="' + videoLoopURL + '"  type="video/mp4"> </video> </div>';
+    var videoLoopURLClean = videoLoopURL.replace("http\:\/\/", "\/\/");
+    var videoLoopEmbed = '<div class="video-loop"> <video autoplay loop muted playsinline> 	<source src="' + videoLoopURLClean + '"  type="video/mp4"> </video> </div>';
+    var videoLoopPreview = '<div class="video-loop"> <video autoplay loop muted playsinline> 	<source src="' + videoLoopURLClean + '"  type="video/mp4"> </video> </div>';
     var unescapedVideojsScript = videojsScript;
     $("#videoLoopCode").html(embedLabel + "<textarea rows='12' class='codebox'>" + videoLoopCSS + videoLoopEmbed + "</textarea>");
     $("#videoLoopPreview").html( previewLabel + videoLoopEmbed );
