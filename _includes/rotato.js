@@ -11,15 +11,13 @@ function buildRotatoForm(){
 }
 
 function createRotato(){
+
+    //get number of images, dimensions and link
     var rotatoNumImages = $("#rotatoNum").val();
     var rotatoDimensions = $("#rotatoDimensions").val();
     var rotatoLink = $("#rotatoLink").val();
-    var rotatoImageURL1 = $("#rotatoImageURL1").val();
-    var rotatoImageURL2 = $("#rotatoImageURL2").val();
-    var rotatoImageURL3 = $("#rotatoImageURL3").val();
-    var rotatoImageURL4 = $("#rotatoImageURL4").val();
-    var rotatoImageURL5 = $("#rotatoImageURL5").val();
 
+    //assign correct padding
     if (rotatoDimensions == "16x9"){
     var rotatoSizeCSS = "16x9 {padding-bottom: 56.25%;}";
     }
@@ -36,7 +34,7 @@ function createRotato(){
     var rotatoSizeCSS = "2x3 {padding-bottom: 150%;}";
     }
 
-    //serve the right css for the number of images
+    //get the right css for the number of images
     if (rotatoNumImages == 2){
     var rotatoKeyframeCSS = "@keyframes twoimgshow{0%,100%,80%{opacity:0}15%,60%{opacity:1}}.img-animation-container-2 #img_anim_1{animation:twoimgshow 8s 10ms infinite}.img-animation-container-2 #img_anim_2{animation:twoimgshow 8s 5s infinite}";
     }
@@ -52,17 +50,31 @@ function createRotato(){
 
     var imageValues = '';
 
-    var imageValues = jQuery(".rotatoImageURL[name='image_values']").map(function(){
-            return this.value
-    }).get()
 
+    var imageValues = jQuery(".rotatoImageURL[name='image_values']").map(function(){
+        return this.value
+    }).get()
+    //console.log(imageValues);
+
+    //var relImageValues = imageValues.replace(/^http?:\/\//, '//')
+
+    var relativeURLs = [];
+
+    for (var i = 0; i < imageValues.length; i++) {
+        urls = imageValues[i].replace("http\:\/\/", "\/\/");
+        relativeURLs.push(urls);
+    }
+    console.log(relativeURLs);
+
+    //make the image tags
     var rotatoImageTags = "";
     var i = 0;
     while (i < rotatoNumImages) {
-        rotatoImageTags += '<img class="img_animation" id="img_anim_' + (i + 1) + '" src="' + imageValues[i] + '" />';
+        rotatoImageTags += '<img class="img_animation" id="img_anim_' + (i + 1) + '" src="' + relativeURLs[i] + '" />';
         i++;
     }
 
+    //build rotato
     var rotatoHTML = '&lt;a href="' + rotatoLink + '"&gt;&lt;div class="img-animation-container img-animation-container-' + rotatoDimensions + ' img-animation-container-' + rotatoNumImages + '" &gt;' + rotatoImageTags + '&lt;/div&gt;&lt;/a&gt;';
     var rotatoPreview = '<a href="' + rotatoLink + '"><div class="img-animation-container img-animation-container-' + rotatoDimensions + ' img-animation-container-' + rotatoNumImages + '" >' + rotatoImageTags + '</div></a>';
 
