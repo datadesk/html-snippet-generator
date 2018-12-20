@@ -12,4 +12,23 @@
     </form>
     <div id="videoLoopPreview"></div>
     <div class="code" id="videoLoopCode"></div>
+    <div class="instructions">
+        <h2>Steps for creating a video loop</h2>
+
+        <h3>Consider the file size</h3>
+        <p>We don't want to upload videos that are many, many megabytes. Aim for a file size around 500 KB. How to reduce the video size:</p>
+        <ul>
+            <li>Make sure the clip is as short as possible.</li>
+            <li>Compress and scale down videos using <a href="//www.videosmaller.com" target="_blank">videosmaller.com</a>.</li>
+            <li>Homepage videos need only be 320 or 480 pixels wide.</li>
+            <li>Remove audio from video on videosmaller.com</li>
+            <li>Be sure to check the video quality after you compress/scale it</li>
+        </ul>
+        <h3>Upload the video to BucketBot in Slack</h3>
+        <p>Send him the video and he'll upload it to our Amazon S3 bucket. He'll give you a published https URL.</p>
+        <h3>Generate video code</h3>
+        <p>Copy BucketBot's URL and visit the <a href="https://datadesk.github.io/html-snippet-generator/" target="_blank">HTML Snippet Generator's</a> tool for generating video loops.</p>
+
+        <p><em>Note: These steps are great for small video loops on the homepage. Topper videos and loops displayed at larger widths require more planning (and code). Ask your friendly neighborhood web developers for assistance.</em></p>
+
 </div>
