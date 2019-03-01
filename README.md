@@ -12,6 +12,13 @@ Move into the directory it created.
 $ cd html-snippet-generator
 ```
 
+Install Bundler
+
+```bash
+$ sudo gem install bundler
+```
+
+
 Install our Ruby dependencies with Bundler.
 
 ```bash
