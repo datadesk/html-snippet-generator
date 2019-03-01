@@ -53,7 +53,6 @@ text-decoration: none; \
 
     var firstItem = ' <figure class=""> \
 <div class="img-container aspect-ratio-16x9"> \
-<!--FIRST STORY: IT MUST MATCH THE STORY YOU PATHED IN FLEX FEATURE. REPLACE URL AND IMG URL. KEEP /600 AT END OF IMG URL--> \
 <a href="' + first_story_url + '"><img alt="" class="full-width" src="' + first_story_image + '"></a> \
 </div> \
 </figure> \
@@ -61,7 +60,6 @@ text-decoration: none; \
 
     var laterItems = ' <div class="flex-container-column"> \
 <ul class="tag-list-wrapper list-unstyled flex-container-row spaced spaced-sm spaced-bottom justify-center"> \
-<!--LIST HEADLINE. REPLACE AS NECESSARY--> \
 <li class="tag tag-minimal tag-first align-center" href="#">' + list_headline + '</li> \
 </ul> \
 <div class="list-container"> \
@@ -72,17 +70,12 @@ text-decoration: none; \
 <li class="collection-item flex-container-row align-items-start collection-item-border-bottom"> \
 <div class="flex-container-column align-items-start flex"> \
 <div> \
-<!--SECOND STORY: REPLACE URL--> \
 <a class="recommender" id="seriesrec" href="' + second_story_url + '"> \
-<!--"PART 1" SUBHEAD, RENAME THESE AS NECESSARY--> \
 <p class="recommender" id="part_number">' + part_one_subhead + '</p> \
-<!--SECOND STORY: REPLACE HED--> \
 <h6>' + second_story_hed + '</h6></a> \
 </div> \
-<!--SECOND STORY: REPLACE URL--> \
 </div><a aria-label="" href="' + second_story_url +'"> \
 <figure class=""> \
-<!--SECOND STORY: REPLACE IMG URL. KEEP /600 AT END OF IMG URL--> \
 <div class="right-element image-xs img-container aspect-ratio-1x1"><img alt="" class="b-lazy full-width b-loaded" src="' + second_story_image + '"></div> \
 </figure></a> \
 </li> \
@@ -95,17 +88,12 @@ text-decoration: none; \
 <li class="collection-item flex-container-row align-items-start collection-item-border-bottom"> \
 <div class="flex-container-column align-items-start flex"> \
 <div> \
-<!--THIRD STORY: REPLACE URL--> \
 <a class="recommender" id="seriesrec" href="' + third_story_url + '"> \
-<!--"PART 2" SUBHEAD, RENAME THESE AS NECESSARY--> \
 <p class="recommender" id="part_number">' + part_two_subhead + '</p> \
-<!--THIRD STORY: REPLACE HED--> \
 <h6>' + third_story_hed + '</h6></a> \
 </div> \
-<!--THIRD STORY: REPLACE URL--> \
 </div><a aria-label="" href="' + third_story_url + '"> \
 <figure class=""> \
-<!--THIRD STORY: REPLACE IMG URL, KEEP /600--> \
 <div class="right-element image-xs img-container aspect-ratio-1x1"><img alt="" class="b-lazy full-width b-loaded" src="' + third_story_image + '"></div> \
 </figure></a> \
 </li> \
@@ -118,17 +106,12 @@ text-decoration: none; \
 <li class="collection-item flex-container-row align-items-start collection-item-border-bottom"> \
 <div class="flex-container-column align-items-start flex"> \
 <div> \
-<!--FOURTH STORY: REPLACE URL--> \
 <a class="recommender" id="seriesrec" href="' + fourth_story_url + '"> \
-<!--"PART 3" SUBHEAD, RENAME THESE AS NECESSARY--> \
 <p class="recommender" id="part_number">' + part_three_subhead + '</p> \
-<!--FOURTH STORY: REPLACE HED--> \
 <h6>' + fourth_story_hed + '</h6></a> \
 </div> \
-<!--FOURTH STORY: REPLACE URL--> \
 </div><a aria-label="" href="' + fourth_story_url + '"> \
 <figure class=""> \
-<!--FOURTH STORY: REPLACE IMG URL, KEEP /600--> \
 <div class="right-element image-xs img-container aspect-ratio-1x1"><img alt="" class="b-lazy full-width b-loaded" src="' + fourth_story_image + '"></div> \
 </figure></a> \
 </li> \
