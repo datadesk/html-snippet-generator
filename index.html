@@ -17,6 +17,9 @@ layout: default
     {% include iframe.js %}
     {% include documentcloud.js %}
     {% include screendoor.js %}
+    {% include column-one-rotato.js %}
+    {% include column-one-representation.js %}
+    {% include series-box.js %}
 </script>
 <header>
     <h1>
@@ -33,7 +36,10 @@ layout: default
         <li><a href="#videoloop" data-toggle="tab">Video Loop</a></li>
         <li><a href="#iframe" data-toggle="tab">Generic iFrame</a></li>
         <li><a href="#documentcloud" data-toggle="tab">DocumentCloud</a></li>
-        <li><a href="#screendoor" data-toggle="tab">Screendoor form</a></li>        
+        <li><a href="#screendoor" data-toggle="tab">Screendoor form</a></li> 
+        <li><a href="#column-one-rotato" data-toggle="tab">Column One Rotato</a></li> 
+        <li><a href="#column-one-representation" data-toggle="tab">Column One Representation</a></li>
+        <li><a href="#series-box" data-toggle="tab">Series Box</a></li>        
     </ul>
     <div id="leTabContent" class="tab-content">
         {% include rotato.html %}
@@ -43,5 +49,8 @@ layout: default
         {% include iframe.html %}
         {% include documentcloud.html %}
         {% include screendoor.html %}
+        {% include column-one-rotato.html %}
+        {% include column-one-representation.html %}
+        {% include series-box.html %}
     </div>
 </div>
