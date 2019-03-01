@@ -22,8 +22,8 @@ border-bottom: 3px solid #990000; \
 </style> \
 <div class="width-100 flex-container-column"> \
 <figure class=""> \
-<div class=" img-container aspect-ratio-4x3"> \
-<a href="' + story_url + '"> <img class="full-width ' + repDimensions + '" alt="" src="' + photo_url + '"> </a> \
+<div class="img-container aspect-ratio-' + repDimensions + '"> \
+<a href="' + story_url + '"> <img class="full-width" alt="" src="' + photo_url + '"> </a> \
 </div> \
 </figure> \
 <ul id="hptag" class="tag-list-wrapper list-unstyled flex-container-row spaced spaced-sm spaced-top justify-center"> \
