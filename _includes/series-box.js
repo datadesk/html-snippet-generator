@@ -1,5 +1,6 @@
 function createSeriesBox(){
     var list_headline = $("#list_headline").val();
+    var list_head_url = $("#list_head_url").val();
     var first_story_url = $("#first_story_url").val();
     var first_story_image = $("#first_story_image").val();
     var second_story_url = $("#second_story_url").val();
@@ -11,9 +12,6 @@ function createSeriesBox(){
     var fourth_story_url = $("#fourth_story_url").val();
     var fourth_story_hed = $("#fourth_story_hed").val();
     var fourth_story_image = $("#fourth_story_image").val();
-    var part_one_subhead = $("#part_one_subhead").val();
-    var part_two_subhead = $("#part_two_subhead").val();
-    var part_three_subhead = $("#part_three_subhead").val();
 
 
     var seriesStyle = ' <style> \
@@ -60,7 +58,7 @@ text-decoration: none; \
 
     var laterItems = ' <div class="flex-container-column"> \
 <ul class="tag-list-wrapper list-unstyled flex-container-row spaced spaced-sm spaced-bottom justify-center"> \
-<li class="tag tag-minimal tag-first align-center" href="#">' + list_headline + '</li> \
+<li class="tag tag-minimal tag-first align-center" href="' + list_head_url + '">' + list_headline + '</li> \
 </ul> \
 <div class="list-container"> \
 <div class="single-item"> \
@@ -71,7 +69,7 @@ text-decoration: none; \
 <div class="flex-container-column align-items-start flex"> \
 <div> \
 <a class="recommender" id="seriesrec" href="' + second_story_url + '"> \
-<p class="recommender" id="part_number">' + part_one_subhead + '</p> \
+<p class="recommender" id="part_number">' + 'Part One' + '</p> \
 <h6>' + second_story_hed + '</h6></a> \
 </div> \
 </div><a aria-label="" href="' + second_story_url +'"> \
@@ -89,7 +87,7 @@ text-decoration: none; \
 <div class="flex-container-column align-items-start flex"> \
 <div> \
 <a class="recommender" id="seriesrec" href="' + third_story_url + '"> \
-<p class="recommender" id="part_number">' + part_two_subhead + '</p> \
+<p class="recommender" id="part_number">' + 'Part Two' + '</p> \
 <h6>' + third_story_hed + '</h6></a> \
 </div> \
 </div><a aria-label="" href="' + third_story_url + '"> \
@@ -107,7 +105,7 @@ text-decoration: none; \
 <div class="flex-container-column align-items-start flex"> \
 <div> \
 <a class="recommender" id="seriesrec" href="' + fourth_story_url + '"> \
-<p class="recommender" id="part_number">' + part_three_subhead + '</p> \
+<p class="recommender" id="part_number">' + 'Part Three' + '</p> \
 <h6>' + fourth_story_hed + '</h6></a> \
 </div> \
 </div><a aria-label="" href="' + fourth_story_url + '"> \
