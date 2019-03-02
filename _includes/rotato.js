@@ -77,3 +77,10 @@ function createRotato(){
     $("#rotatoCode").html( embedLabel + "<textarea rows='12' class='codebox'>" + rotatoOpenCSS + " .img-animation-container-" + rotatoSizeCSS + rotatoKeyframeCSS + rotatoCloseCSS + rotatoHTML + "</textarea>");
     $("#rotatoPreview").html( previewLabel + rotatoPreview );
 }
+
+function rotcopyText(){
+    var content = $("#rotatoCode textarea.codebox");
+    content.select();
+    document.execCommand("copy");
+    $("#rot-copier").html("Copied!");
+}

@@ -10,3 +10,10 @@ function createPremiumVideoEmbed() {
     $("#premiumVideoCode").html(embedLabel + "<textarea rows='12' class='codebox'>" + videojsCSS + premiumVideoEmbed + "</textarea>");
     $("#premiumVideoPreview").html( previewLabel + premiumVideoPreview + escapedVideojsScript );
 }
+
+function pvcopyText(){
+    var content = $("#premiumVideoCode textarea.codebox");
+    content.select();
+    document.execCommand("copy");
+    $("#pv-copier").html("Copied!");
+}

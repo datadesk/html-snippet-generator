@@ -9,3 +9,10 @@ function createGenericEmbed(){
     $("#genericembedCode").html( embedLabel + "<textarea rows='12' class='codebox'>" + embedContainerCSS + embedContainerDivOpen + escapediFrameURLCodeFinal + embedContainerDivClose + "</textarea>");
     $("#genericpreview").html( previewLabel + previewPrefix + escapediFrameURL + previewSuffix );
 }
+
+function iframecopyText(){
+    var content = $("#genericembedCode textarea.codebox");
+    content.select();
+    document.execCommand("copy");
+    $("#iframe-copier").html("Copied!");
+}

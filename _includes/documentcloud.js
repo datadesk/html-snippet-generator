@@ -12,3 +12,10 @@ function creatDocumentCloudEmbed(){
     $("#documentcloudembedCode").html(embedLabel + "<textarea rows='12' class='codebox'>" + html + "</textarea>");
     $("#documentcloudSNAP").fadeIn();
 }
+
+function dccopyText(){
+    var content = $("#documentcloudembedCode textarea.codebox");
+    content.select();
+    document.execCommand("copy");
+    $("#dc-copier").html("Copied!");
+}

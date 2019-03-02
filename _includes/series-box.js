@@ -4,12 +4,15 @@ function createSeriesBox(){
     var first_story_url = $("#first_story_url").val();
     var first_story_image = $("#first_story_image").val();
     var second_story_url = $("#second_story_url").val();
+    var second_story_subhead = $("#second_story_subhead").val();
     var second_story_hed = $("#second_story_hed").val();
     var second_story_image = $("#second_story_image").val();
     var third_story_url = $("#third_story_url").val();
+    var third_story_subhead = $("#third_story_subhead").val();
     var third_story_hed = $("#third_story_hed").val();
     var third_story_image = $("#third_story_image").val();
     var fourth_story_url = $("#fourth_story_url").val();
+    var fourth_story_subhead = $("#fourth_story_subhead").val();
     var fourth_story_hed = $("#fourth_story_hed").val();
     var fourth_story_image = $("#fourth_story_image").val();
 
@@ -69,7 +72,7 @@ text-decoration: none; \
 <div class="flex-container-column align-items-start flex"> \
 <div> \
 <a class="recommender" id="seriesrec" href="' + second_story_url + '"> \
-<p class="recommender" id="part_number">' + 'Part One' + '</p> \
+<p class="recommender" id="part_number">' + second_story_subhead + '</p> \
 <h6>' + second_story_hed + '</h6></a> \
 </div> \
 </div><a aria-label="" href="' + second_story_url +'"> \
@@ -87,7 +90,7 @@ text-decoration: none; \
 <div class="flex-container-column align-items-start flex"> \
 <div> \
 <a class="recommender" id="seriesrec" href="' + third_story_url + '"> \
-<p class="recommender" id="part_number">' + 'Part Two' + '</p> \
+<p class="recommender" id="part_number">' + third_story_subhead + '</p> \
 <h6>' + third_story_hed + '</h6></a> \
 </div> \
 </div><a aria-label="" href="' + third_story_url + '"> \
@@ -105,7 +108,7 @@ text-decoration: none; \
 <div class="flex-container-column align-items-start flex"> \
 <div> \
 <a class="recommender" id="seriesrec" href="' + fourth_story_url + '"> \
-<p class="recommender" id="part_number">' + 'Part Three' + '</p> \
+<p class="recommender" id="part_number">' + fourth_story_subhead + '</p> \
 <h6>' + fourth_story_hed + '</h6></a> \
 </div> \
 </div><a aria-label="" href="' + fourth_story_url + '"> \
@@ -126,4 +129,11 @@ text-decoration: none; \
     $("#seriesboxcode").html( embedLabel + "<textarea rows='12' class='codebox'>" + seriesStyle + firstItem + laterItems + "</textarea>");
     $("#seriesboxpreview").html( previewLabel + seriesStyle + firstItem + laterItems );
 
+}
+
+function sboxcopyText(){
+    var content = $("#seriesboxcode textarea.codebox");
+    content.select();
+    document.execCommand("copy");
+    $("#sbox-copier").html("Copied!");
 }

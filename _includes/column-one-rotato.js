@@ -38,8 +38,6 @@ function createColumnOneRotato(){
 
     var imageValues = '';
 
-    console.log("about to get image values");
-
     var imageValues = jQuery(".columnonerotatoImageURL[name='rotato_image_values']").map(function(){
         return this.value
     }).get()
@@ -58,8 +56,6 @@ function createColumnOneRotato(){
         rotatoImageTags += '<img class="img_animation" id="img_anim_' + (i + 1) + '" src="' + relativeURLs[i] + '" />';
         i++;
     }
-
-    console.log("building rotato");
 
     //build rotato
     var rotatoHTML = '&lt;a href="' + rotatoLink + '"&gt;&lt;div class="img-animation-container img-animation-container-' + rotatoDimensions + ' img-animation-container-' + rotatoNumImages + '" &gt;' + rotatoImageTags + '&lt;/div&gt;&lt;/a&gt;';
@@ -89,4 +85,11 @@ border-bottom: 3px solid #990000; \
 
     $("#column-one-rotato-code").html( embedLabel + "<textarea rows='12' class='codebox'>" + topper + rotatoOpenCSS + " .img-animation-container-" + rotatoSizeCSS + rotatoKeyframeCSS + rotatoCloseCSS + rotatoHTML + footer + "</textarea>");
     $("#column-one-rotato-preview").html( previewLabel + rotatoPreview );
+}
+
+function corcopyText(){
+    var content = $("#column-one-rotato-code textarea.codebox");
+    content.select();
+    document.execCommand("copy");
+    $("#cor-copier").html("Copied!");
 }

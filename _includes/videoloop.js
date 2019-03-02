@@ -9,3 +9,10 @@ function createVideoLoopEmbed(){
     $("#videoLoopCode").html(embedLabel + "<textarea rows='12' class='codebox'>" + videoLoopCSS + videoLoopEmbed + "</textarea>");
     $("#videoLoopPreview").html( previewLabel + videoLoopEmbed );
 }
+
+function vlcopyText(){
+    var content = $("#videoLoopCode textarea.codebox");
+    content.select();
+    document.execCommand("copy");
+    $("#vl-copier").html("Copied!");
+}

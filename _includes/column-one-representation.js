@@ -38,3 +38,10 @@ border-bottom: 3px solid #990000; \
     $("#column-one-representation-preview").html(previewLabel + $return);
 
 }
+
+function repcopyText(){
+    var content = $("#column-one-representation-code textarea.codebox");
+    content.select();
+    document.execCommand("copy");
+    $("#rep-copier").html("Copied!");
+}
