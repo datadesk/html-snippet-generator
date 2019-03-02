@@ -27,3 +27,10 @@ function createYouTubeEmbed(){
     $("#youtubepreview").html( previewLabel + previewPrefix + youtubepreview + previewSuffix );
 
 }
+
+function ytcopyText(){
+    var content = $("#youtubeembedCode textarea.codebox");
+    content.select();
+    document.execCommand("copy");
+    $("#yt-copier").html("Copied!");
+}

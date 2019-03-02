@@ -21,3 +21,10 @@ function createScreendoor() {
 
     $("#screendoorEmbedCode").html( embedLabel + "<textarea rows='12' class='codebox'>" +  unescapedformCSS + unescapedformJS + screendoorCSS + screendoorHTML + unescapedscreendoorJS  + "</textarea>");
 }
+
+function sdoorcopyText(){
+    var content = $("#screendoorEmbedCode textarea.codebox");
+    content.select();
+    document.execCommand("copy");
+    $("#sdoor-copier").html("Copied!");
+}
