@@ -1,69 +1,70 @@
 <div class="tab-pane fade well" id="series-box">
         <form>
             <fieldset>
-                <label>List Headline:</label>
+                  <label>Flex Feature Story URL:</label>
+                  <div class="input-group">
+                        <input type="text" id="first_story_url" class="form-control" placeholder="http://latimes.com/etc">
+                  </div>
+                  <label>Flex Feature Story Image: (url ending in /600)</label>
+                  <div class="input-group">
+                        <input type="text" id="first_story_image" class="form-control" placeholder="https://www.trbimg.com/img-5c743292/turbine/la-1551118985-2nlad4u2cp-snap-image/800/4x3">
+                  </div>         
+                  <br><br>
+                  <label>Series List Headline:</label>
                 <div class="input-group">
-                      <input type="text" id="list_headline" class="form-control" value="List Headline">
+                      <input type="text" id="list_headline" class="form-control" placeholder="List Headline">
                 </div>
-                <label>List Base URL (optional):</label>
+                <label>Series List Base URL (optional):</label>
                 <div class="input-group">
-                      <input type="text" id="list_head_url" class="form-control" value="#">
+                      <input type="text" id="list_head_url" class="form-control" placeholder="#">
                 </div>
-                <label>First Story URL (must match the story you pathed in flex feature):</label>
+                <label>First Story URL:</label>
                 <div class="input-group">
-                      <input type="text" id="first_story_url" class="form-control" value="http://latimes.com/etc">
+                      <input type="text" id="second_story_url" class="form-control" placeholder="http://latimes.com/etc">
+                </div>
+                <label>First Story Subhead: (Default: "PART ONE")</label>
+                <div class="input-group">
+                      <input type="text" id="second_story_subhead" class="form-control" value="PART ONE">
                 </div>
                 <label>First Story Image: (url ending in /600)</label>
                 <div class="input-group">
-                      <input type="text" id="first_story_image" class="form-control" value="https://www.trbimg.com/img-5c743292/turbine/la-1551118985-2nlad4u2cp-snap-image/800/4x3">
+                      <input type="text" id="second_story_image" class="form-control" placeholder="https://www.trbimg.com/img-5c744baa/turbine/la-1551125413-hkofmderxe-snap-image/800/4x3">
+                </div>
+                <label>First Story Hed:</label>
+                <div class="input-group">
+                      <input type="text" id="second_story_hed" class="form-control" placeholder="Second Story Hed">
                 </div>
                 <label>Second Story URL:</label>
                 <div class="input-group">
-                      <input type="text" id="second_story_url" class="form-control" value="http://latimes.com/etc">
+                      <input type="text" id="third_story_url" class="form-control" placeholder="http://latimes.com/etc">
                 </div>
-                <label>Second Story Subhead: (Default: "Part One")</label>
+                <label>Second Story Subhead: (Default: "PART TWO")</label>
                 <div class="input-group">
-                      <input type="text" id="second_story_subhead" class="form-control" value="Part One">
+                      <input type="text" id="third_story_subhead" class="form-control" value="PART TWO">
                 </div>
                 <label>Second Story Image: (url ending in /600)</label>
                 <div class="input-group">
-                      <input type="text" id="second_story_image" class="form-control" value="https://www.trbimg.com/img-5c744baa/turbine/la-1551125413-hkofmderxe-snap-image/800/4x3">
+                      <input type="text" id="third_story_image" class="form-control" placeholder="https://www.trbimg.com/img-5c70553e/turbine/la-1550865720-f8wzuvjsy3-snap-image/800/4x3">
                 </div>
                 <label>Second Story Hed:</label>
                 <div class="input-group">
-                      <input type="text" id="second_story_hed" class="form-control" value="Second Story Hed">
+                      <input type="text" id="third_story_hed" class="form-control" placeholder="Third Story Hed">
                 </div>
                 <label>Third Story URL:</label>
                 <div class="input-group">
-                      <input type="text" id="third_story_url" class="form-control" value="http://latimes.com/etc">
+                      <input type="text" id="fourth_story_url" class="form-control" placeholder="http://latimes.com/etc">
                 </div>
-                <label>Third Story Subhead: (Default: "Part Two")</label>
+                <label>Third Story Subhead: (Default: "PART THREE")</label>
                 <div class="input-group">
-                      <input type="text" id="third_story_subhead" class="form-control" value="Part Two">
+                      <input type="text" id="fourth_story_subhead" class="form-control" value="PART THREE">
                 </div>
                 <label>Third Story Image: (url ending in /600)</label>
                 <div class="input-group">
-                      <input type="text" id="third_story_image" class="form-control" value="https://www.trbimg.com/img-5c70553e/turbine/la-1550865720-f8wzuvjsy3-snap-image/800/4x3">
+                      <input type="text" id="fourth_story_image" class="form-control" placeholder="https://www.trbimg.com/img-5c743924/turbine/la-1551120668-fulyof1gtl-snap-image/800/4x3">
                 </div>
                 <label>Third Story Hed:</label>
                 <div class="input-group">
-                      <input type="text" id="third_story_hed" class="form-control" value="Third Story Hed">
-                </div>
-                <label>Fourth Story URL:</label>
-                <div class="input-group">
-                      <input type="text" id="fourth_story_url" class="form-control" value="http://latimes.com/etc">
-                </div>
-                <label>Fourth Story Subhead: (Default: "Part Three")</label>
-                <div class="input-group">
-                      <input type="text" id="fourth_story_subhead" class="form-control" value="Part Three">
-                </div>
-                <label>Fourth Story Image: (url ending in /600)</label>
-                <div class="input-group">
-                      <input type="text" id="fourth_story_image" class="form-control" value="https://www.trbimg.com/img-5c743924/turbine/la-1551120668-fulyof1gtl-snap-image/800/4x3">
-                </div>
-                <label>Fourth Story Hed:</label>
-                <div class="input-group">
-                      <input type="text" id="fourth_story_hed" class="form-control" value="Fourth Story Hed">
+                      <input type="text" id="fourth_story_hed" class="form-control" placeholder="Fourth Story Hed">
                 </div>
                 <span class="input-group-btn">
                     <button class="btn btn-primary" onclick="createSeriesBox();" type="button">Embed</button>
