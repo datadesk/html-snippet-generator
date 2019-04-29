@@ -4,7 +4,6 @@ function createGenericEmbed(){
     var escapediFrameURLCode = escapediFrameURL.replace(/</g,'&lt;');
     var escapediFrameURLCodeFinal = escapediFrameURLCode.replace(/>/g,'&gt;');
 
-    //alert(escapediFrameURL);
     $("#genericembedNote").fadeIn();
     $("#genericembedCode").html( embedLabel + "<textarea rows='12' class='codebox'>" + embedContainerCSS + embedContainerDivOpen + escapediFrameURLCodeFinal + embedContainerDivClose + "</textarea>");
     $("#genericpreview").html( previewLabel + previewPrefix + escapediFrameURL + previewSuffix );

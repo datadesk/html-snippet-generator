@@ -1,0 +1,16 @@
+<div class="tab-pane fade well" id="opentable">
+    <form>
+        <fieldset>
+            <label>Opentable Embed:</label>
+            <div class="input-group">
+                <input type="text" id="openTable-url" class="form-control" placeholder="https://www.opentable.com/r/bavel-los-angeles">
+                <span class="input-group-btn">
+                    <button class="btn btn-primary" onclick="openTableEmbed();" type="button">Embed</button>
+                </span>
+            </div><!-- /input-group -->
+        </fieldset>
+    </form>
+    <div id="openTablepreview"></div>
+    <div class="code" id="openTableembedCode"></div>
+    <button id="openTable-copier" onclick="openTablecopyText()">Copy to Clipboard</button>
+</div>
