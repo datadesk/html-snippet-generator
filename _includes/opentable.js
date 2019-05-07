@@ -7,7 +7,7 @@ function openTableEmbed(){
     }
 
     openTableURL += '?ref=18113';
-    var iframeUrl = 'https://www.latimes.com/projects/opentable-widget?restURI=' + encodeURIComponent(openTableURL);
+    var iframeUrl = 'https://www.latimes.com/projects/opentable-widget/?restURI=' + encodeURIComponent(openTableURL);
 
     var returnHTML = '<iframe id="opentableiframe" style="width:100%; border: 0;" src="' + iframeUrl + '"></iframe>';
 
